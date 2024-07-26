@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+<style>
+<style>
+  
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%; overflow: auto;} /* Allow scrolling */
+.bgimg {
+  background-image: url('image/slbarab.jpg');
+  height: 100vh; /* Set height to half of the viewport height */
+  background-position: center;
+  background-size: cover;
+  animation: zoomInOut 10s infinite;
+}
+ /* animasi gambar */
+@keyframes zoomInOut {
+  0%, 100% {
+    background-size: 100%;
+  }
+  50% {
+    background-size: 120%;
+  }
+}
+.content {
+  height: 200vh;
+}
+.content {
+  height: 200vh; /* Make content taller to enable scrolling */
+}
+</style>
+</style>
+</head>
+<body>
+    <body>
+      <head>
+        <!-- ... Navbar ... -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <!-- ... existing code ... -->
+      </head>
+      <body>
+        <!-- ... existing code ... -->
+        <div class="w3-bar w3-black">
+          <a href="file:///C:/xampp/htdocs/slbqasite/home.html" class="w3-bar-item w3-button"><i class="fas fa-home"></i> Home</a>
+          <div class="w3-dropdown-hover">
+            <button class="w3-button"><i class="fas fa-ellipsis-h"></i> More</button>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+              <a href="#" class="w3-bar-item w3-button"> Link 1</a>
+              <a href="#" class="w3-bar-item w3-button"> Link 2</a>
+              <a href="#" class="w3-bar-item w3-button"> Link 3</a>
+            </div>
+          </div>
+          <a href="file:///C:/xampp/htdocs/slbqasite/loginpage.html" class="w3-bar-item w3-button"><i class="fas fa-sign-out-alt"></i> Logout</a>
+        </div>
+        <!-- ... existing code ... -->
+      </body>
+  <!-- ... existing code ... -->
+        <div class="bgimg w3-display-container w3-animate-opacity w3-text-black">
+          <div class="w3-display-topleft w3-padding-large w3-xlarge">
+          </div>
+          <div class="w3-display-middle">
+            <h1 class="w3-jumbo w3-animate-top">Welcome SLB Teams</h1>
+            <hr class="w3-border-grey" style="margin:auto;width:50%">
+            <p class="w3-large w3-center">For a balance planet</p>
+          </div>
+          <div class="w3-display-bottomleft w3-padding-large">
+          </div>
+        </div>
+        <!--section service-->
+        <div class="w3-container w3-center w3-padding-64">
+            <h2>Our Services</h2>
+            <p>Explore the amazing features we offer</p>
+            <div class="w3-row-padding" style="margin-top:64px">
+                <div class="w3-third">
+                    <div class="w3-card w3-hover-shadow" onmouseover="this.style.transform='scale(1.05)'; this.style.transition='transform 0.3s';" onmouseout="this.style.transform='scale(1)';">
+                        <img src="image/Search.png" alt="Service 1" style="width:50%" >
+                        <div class="w3-container">
+                            <h3>Search document</h3>
+                            <p>Detail about service 1.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-third">
+                  <div class="w3-card w3-hover-shadow" onmouseover="this.style.transform='scale(1.05)'; this.style.transition='transform 0.3s';" onmouseout="this.style.transform='scale(1)';">
+                      <img src="image/Activity.png" alt="Service 1" style="width:50%" >
+                      <div class="w3-container">
+                          <h3>Activity</h3>
+                          <p>Detail about service 1.</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="w3-third">
+                <div class="w3-card w3-hover-shadow" onmouseover="this.style.transform='scale(1.05)'; this.style.transition='transform 0.3s';" onmouseout="this.style.transform='scale(1)';">
+                    <a href="file:///C:/xampp/htdocs/slbqasite/upload.html">
+                        <img src="image/Upload.png" alt="Service 1" style="width:50%">
+                        <div class="w3-container">
+                            <h3>Upload document</h3>
+                            <p>Detail about service 1.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w3-container w3-center w3-padding-64">
+            <head>
+  <!-- ... existing code ... -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- ... existing code ... -->
+</head>
+
+<body>
+  <!-- ... existing code ... -->
+  <div class="w3-container w3-center w3-padding-64">
+    <h2>Your Activity</h2>
+    <p>Track the documents you have uploaded</p>
+    <div class="w3-row-padding" style="margin-top:64px">
+      <!-- Tambahkan elemen canvas untuk bagan -->
+      <canvas id="uploadActivityChart" width="400" height="200"></canvas>
+    </div>
+  </div>
+  <!-- ... existing code ... -->
+  <script>
+    // Data untuk bagan
+    const data = {
+      labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+      datasets: [{
+        label: 'Upload Activity',
+        data: [10, 20, 30, 40, 50, 60, 70],
+        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+        borderColor: 'rgba(75, 192, 192, 1)',
+        borderWidth: 1
+      }]
+    };
+
+    // Konfigurasi untuk bagan
+    const config = {
+      type: 'bar',
+      data: data,
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        },
+        animation: {
+          duration: 1000,
+          easing: 'easeInOutBounce'
+        }
+      }
+    };
+
+    // Inisialisasi bagan
+    const uploadActivityChart = new Chart(
+      document.getElementById('uploadActivityChart'),
+      config
+    );
+  </script>
+</body>
+
+<div class="content">
+  <!-- Additional content to enable scrolling -->
+</div>
+
+
+</body>
+</html>
